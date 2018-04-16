@@ -1,5 +1,5 @@
 // this is receiving/acquiring the loadsPets request function from the pets.js file
-const loadsPets = require('./pets');
+const loadsPets = require('./pet');
 // this receiving/ being passed in the printToDom function form the dom.js
 const printToDom = require('./dom');
 // this is setting the variable to an empty array
@@ -13,11 +13,11 @@ const onPetLoad = function () {
 const badDomestic = function () {
   console.log('error');
 };
-// this is setting function to receive the request function and passes it the parsing function and the error function
+// this is where you tie in the success and error functions you want to use to the XHR request
 const initialize = () => {
   loadsPets(onPetLoad,badDomestic);
 };
-// this fucntion is just returning what is in the array
+// this function is just returning what is in the array
 const gotDemPets = () => {
   return arrayPets;
 };
