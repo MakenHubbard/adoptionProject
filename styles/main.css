@@ -1,3 +1,27 @@
 body {
   background-color: green;
 }
+
+button {
+  display: flex;
+  justify-content: center;
+}
+
+#pets {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.dosePets{
+  margin: 1%;
+  padding: 10px;
+  flex-basis: 300px;
+  align-items: center;
+}
+
+.anipics {
+  width: 400px;
+  height: 400px;
+  
+}
